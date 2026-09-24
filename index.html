@@ -3,32 +3,98 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>זמני תפילה – נתניה</title>
+<title>זמני תפילה – קרית השרון, נתניה</title>
 <style>
   body {
     font-family: "Segoe UI", Arial, sans-serif;
     background: #f5f5f0;
     color: #222;
     margin: 0;
-    padding: 2rem 1rem;
-    text-align: center;
+    padding: 1.5rem 1rem 3rem;
   }
+  header { text-align: center; margin-bottom: 1.5rem; }
+  header h1 { font-size: 1.7rem; margin: 0 0 0.3rem; }
+  header p { color: #777; margin: 0; font-size: 0.95rem; }
   .card {
-    max-width: 600px;
-    margin: 3rem auto;
+    max-width: 640px;
+    margin: 0 auto 1.5rem;
     background: #fff;
     border-radius: 12px;
-    padding: 2.5rem 2rem;
+    padding: 1.6rem 1.4rem;
     box-shadow: 0 2px 12px rgba(0,0,0,0.08);
   }
-  h1 { margin-top: 0; font-size: 2rem; }
-  p { font-size: 1.15rem; color: #555; }
+  .card.highlight { border: 2px solid #7b5ea7; }
+  .card h2 { margin: 0 0 0.2rem; font-size: 1.35rem; }
+  .card h3 {
+    font-size: 1.1rem; margin: 1.4rem 0 0.6rem;
+    padding-bottom: 0.3rem; border-bottom: 1px solid #eee;
+  }
+  .card h3:first-of-type { margin-top: 1rem; }
+  .sub { color: #777; font-size: 0.95rem; margin: 0 0 0.8rem; }
+  .times { display: flex; gap: 1rem; margin-top: 0.8rem; }
+  .time {
+    flex: 1; background: #f5f5f0; border-radius: 10px;
+    padding: 0.9rem 0.5rem; text-align: center;
+  }
+  .time .label { display: block; font-size: 1rem; color: #555; margin-bottom: 0.3rem; }
+  .time .value { display: block; font-size: 1.9rem; font-weight: 700; color: #4a3573; }
+  ul.times-list { list-style: none; margin: 0; padding: 0; }
+  ul.times-list li {
+    display: flex; align-items: baseline; gap: 0.7rem;
+    padding: 0.45rem 0; border-bottom: 1px dashed #eee;
+    font-size: 1.05rem;
+  }
+  ul.times-list li:last-child { border-bottom: none; }
+  ul.times-list .t { font-weight: 700; min-width: 3.2rem; color: #4a3573; }
+  ul.times-list .note { color: #999; font-size: 0.9rem; }
+  footer { text-align: center; color: #999; font-size: 0.85rem; }
 </style>
 </head>
 <body>
-  <div class="card">
-    <h1>זמני תפילה – נתניה</h1>
-    <p>האתר בהקמה.<br>בקרוב יתפרסמו כאן זמני התפילה.</p>
+
+<header>
+  <h1>זמני תפילה – קרית השרון, נתניה</h1>
+  <p>עודכן: 24 בספטמבר 2026</p>
+</header>
+
+<section class="card highlight">
+  <h2>בית כנסת משכנות נתניה</h2>
+  <p class="sub">מנחה וערבית · ימים א'–ה' · לשבוע 19–25.9.2026</p>
+  <div class="times">
+    <div class="time"><span class="label">מנחה</span><span class="value">18:30</span></div>
+    <div class="time"><span class="label">ערבית</span><span class="value">19:05</span></div>
   </div>
+</section>
+
+<section class="card">
+  <h2>זמני תפילות קבועים לאורך כל השנה</h2>
+  <p class="sub">עדכון אחרון: 22 בספטמבר 2026</p>
+
+  <h3>מנחה</h3>
+  <ul class="times-list">
+    <li><span class="t">12:00</span><span>הרב פיטוסי <span class="note">(משתנה)</span></span></li>
+    <li><span class="t">13:15</span><span>דביר קודשו</span></li>
+    <li><span class="t">13:30</span><span>הרטום 22</span></li>
+    <li><span class="t">14:00</span><span>משכן שלמה – בית חב"ד</span></li>
+    <li><span class="t">15:00</span><span>אור חדש</span></li>
+  </ul>
+
+  <h3>ערבית</h3>
+  <ul class="times-list">
+    <li><span class="t">19:45</span><span>הרב יאנה 3 – מניין חצר</span></li>
+    <li><span class="t">20:00</span><span>שפיגלמן 9 – מניין חצר</span></li>
+    <li><span class="t">20:30</span><span>תפארת יעקב ושלמה</span></li>
+    <li><span class="t">20:50</span><span>דביר קודשו</span></li>
+    <li><span class="t">21:00</span><span>היכל אליעזר</span></li>
+    <li><span class="t">21:00</span><span>דרכי נעם</span></li>
+    <li><span class="t">21:15</span><span>קול אליהו – שבת אחים <span class="note">(טום לנטוס 8, קומה 1, בנין OPAL)</span></span></li>
+    <li><span class="t">21:30</span><span>משכן שלמה – בית חב"ד</span></li>
+    <li><span class="t">21:45</span><span>אור חדש</span></li>
+    <li><span class="t">22:30</span><span>ברחבה של משכנות נתניה</span></li>
+  </ul>
+</section>
+
+<footer>מקור: ערוץ "זמני מניינים בקרית השרון – נתניה"</footer>
+
 </body>
 </html>
