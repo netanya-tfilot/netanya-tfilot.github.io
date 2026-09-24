@@ -31,6 +31,10 @@
   }
   .card h3:first-of-type { margin-top: 1rem; }
   .sub { color: #777; font-size: 0.95rem; margin: 0 0 0.8rem; }
+  .override {
+    background: #fff8e1; border: 1px solid #f0d060; border-radius: 8px;
+    padding: 0.6rem 0.8rem; font-size: 0.98rem; margin-top: 0.8rem;
+  }
   .times { display: flex; gap: 1rem; margin-top: 0.8rem; }
   .time {
     flex: 1; background: #f5f5f0; border-radius: 10px;
@@ -54,19 +58,21 @@
 
 <header>
   <h1>זמני תפילה – קרית השרון, נתניה</h1>
-  <p>עודכן: 24 בספטמבר 2026</p>
+  <p>עודכן: <!-- UPDATED -->24 בספטמבר 2026<!-- /UPDATED --></p>
 </header>
 
 <section class="card highlight">
   <h2>בית כנסת משכנות נתניה</h2>
-  <p class="sub">מנחה וערבית · ימים א'–ה' · לשבוע 19–25.9.2026</p>
+  <p class="sub"><!-- WK:SUB -->מנחה וערבית · ימים א'–ה' · לשבוע 19–25.9.2026<!-- /WK:SUB --></p>
+  <!-- WK:OVERRIDE --><!-- /WK:OVERRIDE -->
   <div class="times">
-    <div class="time"><span class="label">מנחה</span><span class="value">18:30</span></div>
-    <div class="time"><span class="label">ערבית</span><span class="value">19:05</span></div>
+    <div class="time"><span class="label">מנחה</span><span class="value"><!-- WK:MINCHA -->18:30<!-- /WK:MINCHA --></span></div>
+    <div class="time"><span class="label">ערבית</span><span class="value"><!-- WK:MAARIV -->19:05<!-- /WK:MAARIV --></span></div>
   </div>
 </section>
 
 <section class="card">
+<!-- FIXED -->
   <h2>זמני תפילות קבועים לאורך כל השנה</h2>
   <p class="sub">עדכון אחרון: 22 בספטמבר 2026</p>
 
@@ -92,6 +98,7 @@
     <li><span class="t">21:45</span><span>אור חדש</span></li>
     <li><span class="t">22:30</span><span>ברחבה של משכנות נתניה</span></li>
   </ul>
+<!-- /FIXED -->
 </section>
 
 <footer>מקור: ערוץ "זמני מניינים בקרית השרון – נתניה"</footer>
